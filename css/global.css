@@ -1,0 +1,48 @@
+:root {
+  --main-bg-color: #fff;
+  --main-text-color: #161616;
+  --accent: #F6060A;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.body {
+  min-width: 350px;
+  font-family: 'Gilroy', sans-serif;
+  line-height: normal;
+  font-weight: 400;
+  color: var(--main-text-color);
+  background: var(--main-bg-color);
+}
+
+.body {
+  min-height: 100vh;
+  margin: 0; 
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  max-width: 1410px;
+}

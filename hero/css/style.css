@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'bebas';
+    src: local('bebas'), local('bebas'),
+        url('../fonts/bebasneuecyrillic.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Montserrat Regular'), local('Gilroy'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box
+}
+
+*::after,
+*::before {
+    display: inline-block
+}
+
+body,
+html {
+    height: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+
+}
+
+body {
+    margin: 0 auto;
+    color: #fff;
+    line-height: 1;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1.125rem;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.body--castom {
+    margin: 0 auto;
+    max-width: 1920px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+}
+
+button,
+input,
+textarea {
+    font-family: 'Gilroy', sans-serif;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+input,
+textarea {
+    width: 100%
+}
+
+label {
+    display: inline-block
+}
+
+button,
+option,
+select {
+    cursor: pointer
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none
+}
+
+ul li {
+    list-style: none
+}
+
+img {
+    vertical-align: top
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit
+}
+
+body {
+    background-color: #fff;
+}
+
+
+.main {
+    margin: 0 auto;
+}
+
+
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ------------hero--------------- */
+
+.container__hero {
+    margin-top: 32px;
+    min-width: 1380px;
+    min-height: 952px;
+    border-radius: 32px;
+    background: #161616 ;
+}
+
+.container__hero--h1{
+    position: relative;
+    padding-top: 224px;
+}
+
+.hero__title {
+    font-family: 'bebas';
+    color:  #fff;
+    font-size: 260px;
+}
+
+.hero__title--1{
+    position: absolute;
+    left: 50px;
+}
+.hero__title--2{
+    left: 400px;
+    top: 480px;
+    position: absolute;
+}
+
+.hero__title--1::before{
+    content: "07.06";
+    position: absolute;
+    color: #fff;
+    font-size: 120px;
+    left: 1028px;
+    top: 60px;
+}
+.hero__title--2::before{
+    content: "06.06";
+    position: absolute;
+    color: #fff;
+    font-size: 120px;
+    right: 1024px;
+    top: 60px;
+}
+
+.container__hero--btn{
+    padding-top: 810px;
+}
+
+.hero__btn-1{
+    padding: 20px 20px 10px 20px;
+    width: 620px;
+    font-size: 52px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(105px);
+    border-radius: 42px;
+    border: solid 1px #fff;
+    font-family: 'bebas';
+}
+

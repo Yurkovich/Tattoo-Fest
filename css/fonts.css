@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'bebas';
+    src: local('bebas'), local('bebas'),
+        url('../fonts/bebasneuecyrillic.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Montserrat Regular'), local('Gilroy'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
