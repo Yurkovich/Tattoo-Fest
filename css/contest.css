@@ -24,7 +24,7 @@
   font-size: clamp(6rem, 15vw, 18rem);
   text-transform: uppercase;
   padding-left: clamp(0rem, 15vw, 27rem);
-  text-indent: max(-270px, -5vw);
+  text-indent: max(-270px, -15vw);
   margin-bottom: clamp(15rem, 30vw, 38rem);
 }
 
