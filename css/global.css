@@ -1,3 +1,5 @@
+@import 'header.css';
+
 :root {
   --main-bg-color: #fff;
   --main-text-color: #161616;
@@ -10,6 +12,7 @@ html {
 }
 
 .body {
+  position: relative;
   min-width: 350px;
   font-family: 'Gilroy', sans-serif;
   line-height: normal;
@@ -20,7 +23,7 @@ html {
 
 .body {
   min-height: 100vh;
-  margin: 0; 
+  margin: 0;
 }
 
 html,
@@ -45,4 +48,12 @@ body {
   padding: 0 15px;
   height: 100%;
   max-width: 1410px;
+}
+
+.body--active .burger-menu {
+  margin-right: 0;
+}
+
+.body--active .header__burger {
+  z-index: 101;
 }
