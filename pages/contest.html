@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Конкурсы и номинации</title>
+  <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/contest.css">
 </head>
 
@@ -21,7 +22,7 @@
             </svg>
           </div>
           <div class="header__links">
-            <a href="#" class="header__link" data-link-type="box">
+            <a href="#" class="header__link" data-style-type="transparent">
               купить бокс
               <span class="header__link-icon">
                 <svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +32,7 @@
                 </svg>
               </span>
             </a>
-            <a href="#" class="header__link" data-link-type="ticket">
+            <a href="#" class="header__link" data-style-type="red">
               купить билет
               <span class="header__link-icon">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +45,7 @@
               </span>
             </a>
           </div>
-          <a href="#" class="header__burger" id="burger-menu">
+          <a href="#" class="header__burger" id="burger-menu" [data-style-type="transparent"]>
             <p class="header__burger-text">меню</p>
             <div class="header__burger-icon">
               <span></span>
@@ -55,7 +56,19 @@
     </header>
 
     <main class="main">
-
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <h1 class="hero__title">Конкурсы<br> 
+              и номинации
+            </h1>
+            <div class="hero__links">
+              <a class="hero__link" data-style-type="transparent" href="#">купить бокс</a>
+              <a class="hero__link" data-style-type="red" href="#">купить билет</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">

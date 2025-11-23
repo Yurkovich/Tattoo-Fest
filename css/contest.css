@@ -1,1 +1,51 @@
-@import 'header.css'
+.main {
+  margin-top: 33px;
+}
+
+.hero {
+  max-width: 1410px;
+  border-radius: 32px;
+  margin: 0 auto;
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+  background-image: url('../media/decor/hand.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; 
+}
+
+.hero__inner {
+  padding-top: 123px;
+  padding-bottom: 50px;
+}
+
+.hero__title {
+  font-family: Bebas;
+  font-size: clamp(6rem, 15vw, 18rem);
+  text-transform: uppercase;
+  padding-left: clamp(0rem, 15vw, 27rem);
+  text-indent: max(-270px, -5vw);
+  margin-bottom: clamp(15rem, 30vw, 38rem);
+}
+
+.hero__title::first-line {
+  padding-left: 0;
+}
+
+.hero__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 3rem);
+  font-size: clamp(2rem, 4vw, 5.2rem);
+}
+
+.hero__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 42px;
+  transition: all .2s ease-in-out;
+}
