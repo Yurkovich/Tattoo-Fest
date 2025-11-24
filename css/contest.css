@@ -2,6 +2,10 @@
   margin-top: 33px;
 }
 
+/* ================ */
+/* ===== Hero ===== */
+/* ================ */
+
 .hero {
   max-width: 1410px;
   border-radius: 32px;
@@ -11,7 +15,8 @@
   background-image: url('../media/decor/hand.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center; 
+  background-position: center center;
+  margin-bottom: 120px;
 }
 
 .hero__inner {
@@ -48,4 +53,197 @@
   padding: 10px 15px;
   border-radius: 42px;
   transition: all .2s ease-in-out;
+}
+
+
+/* ================== */
+/* ===== Judges ===== */
+/* ================== */
+
+.judges {
+  margin-bottom: 120px;
+}
+
+.judges__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.judges__title {
+  font-family: Bebas;
+  font-size: clamp(5rem, 8vw, 12rem);
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.judges__title::after {
+  content: "";
+  position: absolute;
+  background: url(../media/decor/underline.svg) no-repeat center / contain;
+  bottom: -50%;
+  left: 0;
+  width: clamp(32rem, 50vw, 72rem);
+  height: 100%;
+  z-index: -1;
+}
+
+.judges__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.judges__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.judges__card-img {
+  background-image: url('../media/judges/judges-bg.svg');
+  cursor: pointer;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+.judges__card-img img {
+  background-color: var(--main-text-color);
+  background-image: url(../media/judges/judges-bg.svg);
+  background-position: center;
+  background-size: contain;
+  border-radius: 100%;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.judges__card-video {
+  position: relative;
+}
+
+.judges__card-video::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  content: url(../media/judges/judges-play.svg)
+}
+
+.judges__name {
+  font-family: Bebas;
+  font-size: clamp(2.2rem, 2.5vw, 3.2rem);
+}
+
+.judges__post {
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+  max-width: 170px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.judges__socials {
+  display: flex;
+  gap: 5px;
+}
+
+.judges__name--special {
+  position: relative;
+  z-index: 5;
+  color: var(--main-bg-color);
+}
+
+.judges__name--special::after {
+  content: "";
+  position: absolute;
+  background: url(../media/judges/name-bg.svg) no-repeat center / contain;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scale(1.4);
+}
+
+.judges__socials-item {}
+
+.judges__socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 100%;
+}
+
+.judges__btn {
+  align-self: center;
+  margin-left: 0;
+  font-size: clamp(1.8rem, 2vw, 2.2rem);
+  font-weight: 600;
+  color: var(--main-bg-color);
+  background-color: var(--accent);
+  border-radius: 42px;
+  padding: 15px 44px;
+}
+
+
+/* ================== */
+/* ===== Healed ===== */
+/* ================== */
+
+.healed {
+  margin-bottom: 120px;
+}
+
+.healed__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.healed__header {
+  display: flex;
+  gap: 30px;
+}
+
+.healed__title {
+  font-family: Bebas;
+  font-size: clamp(4rem, 7vw, 8.2rem);
+}
+
+.healed__title span {
+  position: relative;
+  text-wrap: nowrap;
+  color: var(--main-bg-color);
+}
+
+.healed__title span::after {
+  content: "";
+  position: absolute;
+  background: url(../media/judges/title-bg.svg) no-repeat center / contain;
+  top: 0;
+  left: 5%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scale(1.2);
+}
+
+.healed__description {
+  font-family: Bebas;
+  font-size: clamp(3rem, 5vw, 6rem);
+}
+
+
+
+
+
+
+@media (max-width: 769px) {
+  .judges__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .healed__header {
+    flex-direction: column;
+  }
 }
