@@ -537,6 +537,105 @@
 
 
 
+/* ==================== */
+/* ===== Best Box ===== */
+/* ==================== */
+
+
+.best-box {
+  margin-bottom: 120px;
+}
+
+.best-box__inner {}
+
+.best-box__title {
+  font-family: Bebas;
+  font-size: clamp(4rem, 7vw, 8.2rem);
+  margin-bottom: 30px;
+}
+
+.best-box__title span {
+  position: relative;
+  text-wrap: nowrap;
+  color: var(--main-bg-color);
+}
+
+.best-box__title span::after {
+  content: "";
+  position: absolute;
+  background: url(../media/best-box/best-box-title-bg.svg) no-repeat center / contain;
+  top: 0;
+  left: 5%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scale(1.5);
+}
+
+.best-box__wrapper {
+  background-image: url("../media/best-box/best-box-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  padding: clamp(1rem, 3vw, 4rem);
+  border-radius: 32px;
+}
+
+.best-box__body {
+  max-width: 636px;
+  background-color: #ffffff20;
+  backdrop-filter: blur(42px);
+  color: var(--main-bg-color);
+  padding: clamp(2rem, 3vw, 3rem) clamp(2rem, 4vw, 4rem);
+  border-radius: 32px;
+  box-shadow: 1px 0 1px 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+.best-box__description {
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  margin-bottom: 35px;
+}
+
+.best-box__info {
+  padding-bottom: 35px;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  position: relative;
+}
+
+.best-box__info::before {
+  content: "";
+  position: absolute;
+  background: url(../media/best-box/best-box-info-bg.svg) no-repeat center / contain;
+  top: -15px;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scale(1);
+}
+
+.best-box__buttons {
+  font-size: clamp(1.8rem, 2vw, 2.2rem);
+  ;
+  display: flex;
+  gap: 5px;
+}
+
+.best-box__btn {
+  display: flex;
+  padding: 8px;
+  flex: 1;
+  justify-content: center;
+  border-radius: 18px;
+}
+
+
+
+
+
 @media(max-width: 1030px) {
   .healed-slider__link-wrapper {
     flex-direction: column;
@@ -574,6 +673,28 @@
 
   .accordion__item::before {
     background-size: 50%;
+  }
+}
+
+@media (max-width: 430px) {
+  .best-box__body {
+    background-image: url('../media/best-box/best-box-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .best-box__wrapper {
+    padding: 0;
+    background-image: none;
+  }
+
+  .best-box__buttons {
+    flex-direction: column;
+  }
+
+  .best-box__info::before {
+    left: 5px;
+    transform: scaleY(3.5) scaleX(1.3);
   }
 }
 
