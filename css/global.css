@@ -64,9 +64,10 @@ body {
 
 [data-style-type="transparent"] {
   border: 2px solid var(--main-bg-color);
-  background-color: inherit;
+  /* background-color: inherit; */
   backdrop-filter: blur(10px);
   transition: all .2s ease-in-out;
+  background-color: #0000001f;
 }
 
 [data-style-type="red"] {
