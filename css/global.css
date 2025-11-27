@@ -41,6 +41,7 @@ body {
 
 .main {
   flex-grow: 1;
+  margin-top: clamp(0rem, 1vw, 3.2rem);
 }
 
 .container {
