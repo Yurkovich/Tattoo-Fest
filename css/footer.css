@@ -1,1 +1,243 @@
-    
+.footer {}
+
+.contacts {
+  margin-bottom: clamp(4rem, 10vw, 12rem);
+}
+
+.contacts__inner {
+  font-family: Bebas;
+}
+
+.contacts__title {
+  font-size: clamp(5rem, 8vw, 12rem);
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.contacts__title::after {
+  content: "";
+  position: absolute;
+  background: url(../media/decor/underline.svg) no-repeat center / contain;
+  bottom: -50%;
+  left: 0;
+  width: clamp(20rem, 30vw, 50rem);
+  height: 100%;
+  z-index: -1;
+}
+
+.contacts__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.contacts__map {
+  width: 100%;
+  max-width: 662px;
+  max-height: 580px;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contacts__map img {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__info {}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 3vw, 3.5rem);
+}
+
+.contacts__item {
+  color: var(--main-text-color);
+}
+
+.contacts__item-title {
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  margin-bottom: 12px;
+  opacity: 0.7;
+}
+
+.contacts__item-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(2.2rem, 3vw, 3.2rem);
+  padding-left: 5px;
+  border-left: 3px solid var(--accent);
+  line-height: 1.3;
+}
+
+.contacts__item-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(2.2rem, 3vw, 3.2rem);
+  line-height: 1.3;
+}
+
+
+
+.footer__content {
+  max-width: 1410px;
+  border-radius: 32px;
+  margin: 0 auto;
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+  margin-bottom: clamp(4rem, 10vw, 12rem);
+  font-family: Bebas;
+}
+
+.footer__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0 70px;
+
+}
+
+.footer__info {
+  max-width: 560px;
+}
+
+.footer__nav {
+  font-size: clamp(1.8rem, 2vw, 2rem);
+}
+
+.footer__nav-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 10px;
+}
+
+.footer__nav-list::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 167px;
+  height: 2px;
+  background-color: var(--accent);
+  z-index: 1;
+}
+
+.footer__nav-item {}
+
+.footer__nav-link {}
+
+
+.footer__details {
+  padding: 30px 0 40px
+}
+
+.footer__details-title {
+  font-size: clamp(1.6rem, 1.5vw, 1.8rem);
+  margin-bottom: 16px;
+}
+
+.footer__details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: Gilroy;
+}
+
+.footer__details-item {
+  font-size: clamp(1.2rem, 1.5vw, 1.4rem);
+}
+
+.footer__details-link {}
+
+
+.footer__contacts {}
+
+.footer__contacts-inner {
+  padding-left: clamp(2rem, 8vw, 11rem);
+}
+
+.footer__contacts-title {
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  margin-bottom: 16px;
+}
+
+.footer__contacts-wrapper {}
+
+.footer__contacts-info {}
+
+.footer__contacts-list {}
+
+.footer__contacts-item {
+  margin-bottom: 20px;
+}
+
+.footer__contacts-item-title {
+  font-size: clamp(1.2rem, 1.5vw, 1.4rem);
+  margin-bottom: 12px;
+  opacity: 0.7;
+}
+
+.footer__contacts-item-info {
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+  padding-left: 5px;
+  border-left: 2px solid var(--accent);
+}
+
+.footer__contacts-item-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
+.developer {
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  position: relative;
+}
+
+.developer::after {
+  content: "";
+  position: absolute;
+  background: url(../media/decor/underline.svg) no-repeat center / contain;
+  bottom: -65%;
+  left: 0;
+  width: clamp(21rem, 30vw, 26rem);
+  height: 100%;
+  z-index: 0;
+}
+
+
+
+@media (max-width: 500px) {
+  .contacts__wrapper {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .contacts__map {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 430px) {
+  .footer__columns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__info {
+    margin-bottom: 30px;
+  }
+
+  .footer__contacts-inner {
+    padding-left: 0;
+  }
+  
+}

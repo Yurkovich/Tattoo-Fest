@@ -11,7 +11,12 @@
   top: 0;
   width: 100%;
   z-index: 20;
-  margin-top: 32px;
+  transform: translateY(32px);
+  transition: translateY 0.3s ease;
+}
+
+.header--scrolled {
+  transform: translateY(0px);
 }
 
 .header__inner {

@@ -1,3 +1,4 @@
+// Открытие и закрытие бургер-меню
 const burgerBtn = document.getElementById('burger-menu')
 const body = document.querySelector('body')
 
