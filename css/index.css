@@ -198,9 +198,9 @@
   max-width: clamp(10rem, 12vw, 21rem);
 }
 
-.about__item--empty {
+/* .about__item--empty {
   width: 0;
-}
+} */
 
 
 @media (max-width: 770px) {
