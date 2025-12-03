@@ -638,6 +638,76 @@
 }
 
 
+/* ================ */
+/* ===== Buy ===== */
+/* =============== */
+
+.buy {
+  margin-bottom: clamp(4rem, 10vw, 12rem);
+}
+
+.buy__inner {}
+
+.buy__title {
+  font-family: Bebas;
+  font-size: clamp(5rem, 8vw, 12rem);
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.buy__title::before {
+  content: "";
+  position: absolute;
+  background: url(../media/shared/decoration/underline.svg) no-repeat center / contain;
+  bottom: -50%;
+  left: 0;
+  width: clamp(32rem, 50vw, 65rem);
+  height: 100%;
+  z-index: -1;
+}
+
+.buy__content {
+  display: flex;
+  align-items: center;
+  gap: clamp(3rem, 10vw, 17rem);
+  background-image: url(../media/pages/index/buy-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  aspect-ratio: 2 / 1;
+  width: 100%;
+
+  color: var(--main-bg-color);
+  font-family: Bebas;
+}
+
+.buy__date {
+  font-size: clamp(4rem, 10vw, 16rem);
+  padding-left: clamp(2rem, 5vw, 7rem);
+}
+
+.buy__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  text-align: right;
+  height: 60%;
+}
+
+.buy__location {
+  font-size: clamp(2rem, 3vw, 3.2rem);
+}
+
+.buy__btn {
+  font-family: Gilroy;
+  padding: 15px clamp(1rem, 5vw, 5rem);
+  border-radius: 32px;
+  font-size: clamp(1.8rem, 2vw, 2.2rem);
+}
+
+
+
 /* ====================== */
 /* ===== Presenters ===== */
 /* ====================== */
@@ -799,15 +869,15 @@
   .about__item::after {
     content: none;
   }
-
-
-
-  .accordion__inner {
-    flex-direction: column;
-  }
-
-  .accordion
 }
+
+
+
+.accordion__inner {
+  flex-direction: column;
+}
+
+.accordion {}
 
 
 
@@ -863,6 +933,29 @@
   }
 }
 
+@media (max-width: 700px) {
+  .buy__content {
+    background-image: url(../media/pages/tickets/ticket.svg);
+    aspect-ratio: 1;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .buy__date {
+    padding-left: 0;
+  }
+
+  .buy__wrapper {
+    align-items: center;
+  }
+
+  .buy__location {
+    width: 42vw;
+    text-align: center;
+  }
+}
+
 @media (max-width: 550px) {
   .about__grid {
     grid-template-columns: 1fr 1fr;
@@ -888,5 +981,28 @@
 
   .presenters__presenter:last-child {
     grid-column: 1;
+  }
+
+
+  .buy__content {
+    aspect-ratio: 1 / 1.5;
+    padding: clamp(3rem, 5vw, 6rem);
+  }
+
+  .buy__wrapper {
+    height: 75%;
+  }
+
+  .buy__date {
+    font-size: 10rem;
+  }
+
+  .buy__location {
+    font-size: 2.8rem;
+    width: 30rem;
+  }
+
+  .buy__btn {
+    padding: 15px 7rem;
   }
 }
