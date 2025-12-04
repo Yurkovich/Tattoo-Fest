@@ -1,5 +1,6 @@
 @import 'header.css';
 
+
 :root {
   --main-bg-color: #fff;
   --main-text-color: #161616;
@@ -38,6 +39,7 @@ body {
   width: 100%;
   min-height: 100%;
 }
+
 
 .main {
   flex-grow: 1;

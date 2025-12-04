@@ -86,3 +86,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// Ждем загрузки всей страницы
+window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+
+    // Добавляем небольшую задержку для плавного исчезновения
+    setTimeout(function () {
+        preloader.classList.add('hidden');
+
+        // Удаляем прелоадер из DOM после анимации
+        setTimeout(function () {
+            preloader.style.display = 'none';
+        }, 500);
+    }, 2000); // 1 секунда минимальной загрузки
+});
+
