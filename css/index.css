@@ -60,6 +60,8 @@ text-shadow: 0 0 1px white;
 }
 
 
+
+
 .hero {
   max-width: 1410px;
   border-radius: 32px;
@@ -161,6 +163,7 @@ text-shadow: 0 0 1px white;
 /* ================= */
 
 
+
 .about {
   margin-bottom: clamp(4rem, 10vw, 12rem);
 }
@@ -177,7 +180,6 @@ text-shadow: 0 0 1px white;
   font-size: clamp(5rem, 8vw, 12rem);
   font-family: Bebas;
   position: relative;
-  opacity: 1 !important;
 }
 
 .about__title::after {
