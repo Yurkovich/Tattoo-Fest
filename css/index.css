@@ -237,6 +237,11 @@
   background-size: cover;
 }
 
+.about__item--video::after {
+  position: absolute;
+  content: '';
+}
+
 .about__item:hover::after {
   transform: rotate(-115deg);
 }
@@ -426,7 +431,6 @@
 }
 
 .card-right-2 {
-  margin-left: -100px;
   margin-top: -100px;
 }
 
@@ -713,7 +717,7 @@
 .buy__title {
   font-family: Bebas;
   font-size: clamp(5rem, 8vw, 12rem);
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -741,6 +745,7 @@
 
   color: var(--main-bg-color);
   font-family: Bebas;
+  margin-top: -60px;
 }
 
 .buy__date {
@@ -936,7 +941,7 @@
 
 
 .accordion__inner {
-  flex-direction: column;
+
 }
 
 .accordion {}
@@ -944,6 +949,11 @@
 
 
 @media (max-width: 770px) {
+
+  .accordion__inner {
+    flex-direction: column;
+  }
+
   .about__header {
     flex-direction: column;
   }
@@ -1016,6 +1026,23 @@
     width: 42vw;
     text-align: center;
   }
+
+  .card-right-2 {
+    margin-top: 0px;
+  }
+  
+  .card-right {
+    align-self: flex-end;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .buy__content {
+    margin-top: 0;
+  }
+
+  .card-inner-end {
+    margin-top: -20px;
+}
 }
 
 @media (max-width: 550px) {
