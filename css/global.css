@@ -83,6 +83,7 @@ body {
   background-color: var(--accent);
   backdrop-filter: blur(10px);
   transition: all .2s ease-in-out;
+  color: var(--main-bg-color);
 }
 
 [data-style-type="transparent"]:hover {
@@ -92,5 +93,5 @@ body {
 
 [data-style-type="red"]:hover {
   border: 2px solid var(--main-bg-color);
-  background-color: inherit;
+  background-color: #0000002a;
 }
