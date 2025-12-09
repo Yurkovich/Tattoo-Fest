@@ -14,12 +14,20 @@
   transform: translateY(clamp(0rem, 1vw, 3.2rem));
 }
 
+.header.scrolled {
+  background: rgba(0, 0, 0, 0.288);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: translateY(0)
+}
+
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  padding: clamp(1rem, 3vw, 3rem) 0;
+  padding: clamp(1rem, 3vw, 2rem) 0;
 }
 
 

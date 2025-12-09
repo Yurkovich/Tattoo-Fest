@@ -1054,19 +1054,20 @@
   .card-right-2 {
     margin-top: 0px;
   }
-  
+
   .card-right {
     align-self: flex-end;
     margin-right: 0px;
     margin-top: 0px;
   }
+
   .buy__content {
     margin-top: 0;
   }
 
   .card-inner-end {
     margin-top: -20px;
-}
+  }
 }
 
 @media (max-width: 550px) {
