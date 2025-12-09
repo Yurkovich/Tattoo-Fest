@@ -638,6 +638,8 @@
   flex: 1;
   justify-content: center;
   border-radius: 18px;
+  font-family: Bebas;
+  color: var(--main-bg-color);
 }
 
 
@@ -716,6 +718,8 @@
   object-position: 50% 50%;
   object-fit: cover;
 }
+
+
 
 /* =================== */
 /* ===== Rewards ===== */
