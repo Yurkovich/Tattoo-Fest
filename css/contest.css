@@ -719,6 +719,17 @@
   object-fit: cover;
 }
 
+.nomination__btn {
+  font-size: clamp(1.8rem, 2vw, 2.2rem);
+  padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1.5rem, 2.5vw, 3rem);
+  border-radius: 32px;
+  font-family: Bebas;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 /* =================== */
