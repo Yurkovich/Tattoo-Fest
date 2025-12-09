@@ -618,11 +618,11 @@
   position: absolute;
   background: url(../media/shared/decoration/text-bg.svg) no-repeat center / contain;
   top: -2em;
-    left: 8em;
-    width: 6em;
-    height: 5em;
-    z-index: -1;
-    transform: scaleX(4.2);
+  left: 8em;
+  width: 6em;
+  height: 5em;
+  z-index: -1;
+  transform: scaleX(4.2);
 }
 
 .best-box__buttons {
@@ -704,10 +704,18 @@
   color: var(--main-bg-color);
 }
 
-.nomination__info-jpg{
+.nomination__info-jpg {
   border-radius: 32px;
 }
 
+.nomination__img {}
+
+.nomination__img img {
+  width: 100%;
+  height: 100%;
+  object-position: 50% 50%;
+  object-fit: cover;
+}
 
 /* =================== */
 /* ===== Rewards ===== */
@@ -766,8 +774,8 @@
   border-radius: 32px;
 }
 
-.rewards__item-2{
-  transform: scale(1.2); 
+.rewards__item-2 {
+  transform: scale(1.2);
 }
 
 .rewards__item-title {
@@ -832,8 +840,9 @@
   .judges__list {
     grid-template-columns: repeat(2, 1fr);
   }
-  .rewards__item-2{
-    transform: scale(1); 
+
+  .rewards__item-2 {
+    transform: scale(1);
   }
 
 
@@ -865,6 +874,14 @@
   .accordion__item::before {
     background-size: 50%;
   }
+
+  /* .nomination__inner {
+    flex-direction: column;
+  } */
+
+  /* .nomination__img img {
+    height: 40%;
+  } */
 
   .nomination__inner::after {
     background-position: top right;
@@ -903,6 +920,10 @@
 
   .best-box__wrapper::after {
     display: none;
+  }
+
+  .nomination__inner {
+    flex-direction: column;
   }
 }
 
