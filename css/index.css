@@ -61,8 +61,6 @@
 }
 
 
-
-
 .hero {
   max-width: 1410px;
   border-radius: 32px;
@@ -164,7 +162,6 @@
 /* ================= */
 
 
-
 .about {
   margin-bottom: clamp(4rem, 10vw, 12rem);
 }
@@ -181,17 +178,40 @@
   font-size: clamp(5rem, 8vw, 12rem);
   font-family: Bebas;
   position: relative;
-  opacity: 1 !important;
+
+
+  opacity: 0;
+  transform: translateY(200px);
+  will-change: transform, opacity;
+
+  animation-name: fadeUp;
+  animation-duration: 600ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.2, .9, .2, 1);
+  animation-timeline: view();
+  animation-range: 0% 60%;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .about__title::after {
   content: "";
   position: absolute;
+  left: -0.1em;
+  bottom: -0.35em;
+  width: 5em;
+  height: 0.9em;
   background: url(../media/shared/decoration/underline.svg) no-repeat center / contain;
-  bottom: -50%;
-  left: 0;
-  width: clamp(32rem, 45vw, 60rem);
-  height: 100%;
   z-index: -1;
 }
 
@@ -225,16 +245,16 @@
 }
 
 .about__item::after {
+  content: "";
   position: absolute;
-  content: '';
+  right: 0%;
+  bottom: 0%;
+  width: clamp(2.2rem, 6vw, 6.7rem);
+  height: clamp(2.2rem, 6vw, 6.7rem);
   background-image: url(../media/pages/index/card-arrow.svg);
   background-repeat: no-repeat;
-  left: clamp(70%, 75vw, 78%);
-  width: clamp(2rem, 6vw, 6.7rem);
-  height: clamp(2rem, 6vw, 6.7rem);
-  transition: all .3s ease;
-  top: clamp(70%, 75vw, 78%);
-  background-size: cover;
+  background-size: contain;
+  transition: transform .3s ease;
 }
 
 .about__item--video::after {
@@ -333,8 +353,6 @@
 
 .partners__wrapper {
   position: relative;
-  width: 100vw;
-  max-width: 100%;
   height: 100px;
   overflow: hidden;
   border-top: 2px solid var(--main-text-color);
@@ -608,9 +626,9 @@
   content: "";
   position: absolute;
   background: url(../media/shared/decoration/underline.svg) no-repeat center / contain;
-  bottom: -50%;
+  bottom: -0.55em;
   left: 0;
-  width: clamp(32rem, 50vw, 72rem);
+  width: 6.5em;
   height: 100%;
   z-index: -1;
 }
@@ -687,8 +705,8 @@
   background: url(../media/shared/decoration/text-bg.svg) no-repeat center / contain;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 6em;
+  height: 1em;
   z-index: -1;
   transform: scale(1.4);
 }
@@ -729,7 +747,7 @@
 .buy__title {
   font-family: Bebas;
   font-size: clamp(5rem, 8vw, 12rem);
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -737,10 +755,10 @@
   content: "";
   position: absolute;
   background: url(../media/shared/decoration/underline.svg) no-repeat center / contain;
-  bottom: -50%;
-  left: 0;
-  width: clamp(32rem, 50vw, 65rem);
-  height: 100%;
+  bottom: -0.5em;
+  left: -0.1em;
+  width: 5em;
+  height: 1em;
   z-index: -1;
 }
 
@@ -754,7 +772,6 @@
   background-position: center;
   aspect-ratio: 2 / 1;
   width: 100%;
-
   color: var(--main-bg-color);
   font-family: Bebas;
   margin-top: -60px;
@@ -815,10 +832,10 @@
   content: "";
   position: absolute;
   background: url(../media/shared/decoration/underline.svg) no-repeat center / contain;
-  bottom: -50%;
-  left: 0;
-  width: clamp(17rem, 30vw, 39rem);
-  height: 100%;
+  bottom: -0.5em;
+  left: -0.1em;
+  width: 3.5em;
+  height: 1em;
   z-index: 1;
   transform: scaleY(1.5);
 }
