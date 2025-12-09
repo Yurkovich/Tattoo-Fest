@@ -65,6 +65,11 @@ body {
   z-index: 101;
 }
 
+.burger-menu{
+  position: relative;
+  z-index: 1000;
+}
+
 [data-style-type="transparent"] {
   border: 2px solid var(--main-bg-color);
   /* background-color: inherit; */

@@ -257,9 +257,26 @@
   transition: transform .3s ease;
 }
 
+.about__item--video::after {
+  position: absolute;
+  content: '';
+}
+
 .about__item:hover::after {
   transform: rotate(-115deg);
 }
+
+.about__item:hover .about__item-title {
+  transform: scale(1.1);
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.about__item-title {
+  transition: transform 0.2s ease;
+}
+
+
+
 
 .about__item:nth-child(2) {
   grid-column: 3/4;
@@ -444,7 +461,6 @@
 }
 
 .card-right-2 {
-  margin-left: -100px;
   margin-top: -100px;
 }
 
@@ -687,12 +703,12 @@
   content: "";
   position: absolute;
   background: url(../media/shared/decoration/text-bg.svg) no-repeat center / contain;
-  top: 0;
+  top: -0.1em;
   left: 0;
   width: 6em;
-  height: 1em;
+  height: 1.1em;
   z-index: -1;
-  transform: scale(1.4);
+  transform: scaleX(1.4);
 }
 
 .judges__socials-item {}
@@ -731,7 +747,7 @@
 .buy__title {
   font-family: Bebas;
   font-size: clamp(5rem, 8vw, 12rem);
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -758,6 +774,7 @@
   width: 100%;
   color: var(--main-bg-color);
   font-family: Bebas;
+  margin-top: -60px;
 }
 
 .buy__date {
@@ -807,7 +824,7 @@
 .presenters__title {
   font-family: Bebas;
   font-size: clamp(5rem, 8vw, 12rem);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -950,12 +967,12 @@
   }
 }
 
-
-.accordion {}
-
-
-
 @media (max-width: 770px) {
+
+  .accordion__inner {
+    flex-direction: column;
+  }
+
   .about__header {
     flex-direction: column;
   }
@@ -1033,6 +1050,23 @@
     width: 42vw;
     text-align: center;
   }
+
+  .card-right-2 {
+    margin-top: 0px;
+  }
+  
+  .card-right {
+    align-self: flex-end;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .buy__content {
+    margin-top: 0;
+  }
+
+  .card-inner-end {
+    margin-top: -20px;
+}
 }
 
 @media (max-width: 550px) {
