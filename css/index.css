@@ -703,12 +703,12 @@
   content: "";
   position: absolute;
   background: url(../media/shared/decoration/text-bg.svg) no-repeat center / contain;
-  top: 0;
+  top: -0.1em;
   left: 0;
   width: 6em;
-  height: 1em;
+  height: 1.1em;
   z-index: -1;
-  transform: scale(1.4);
+  transform: scaleX(1.4);
 }
 
 .judges__socials-item {}
