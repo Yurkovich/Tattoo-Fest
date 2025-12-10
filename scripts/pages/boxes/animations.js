@@ -18,16 +18,16 @@ gsap.fromTo('.hero__links', {
 gsap.fromTo('.equipment', 
   { 
     opacity: 0, 
-    y: 100 
+    y: 100,
   }, 
   { 
     opacity: 1, 
     y: 0,
     scrollTrigger: {
       trigger: '.equipment',
-      start: 'top 80%',
-      end: 'bottom 60%',
-      toggleActions: 'play none none none',
+      start: 'top 90%',
+      end: 'bottom 10%',
+      toggleActions: "play reverse play reverse",
     },
     duration: 1
   }
