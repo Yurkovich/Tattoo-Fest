@@ -83,9 +83,10 @@
 .equipment__title span {
   position: relative;
   color: var(--main-bg-color);
+  z-index: 2;
 }
 
-.equipment__title span::before {
+.equipment__title span::after {
   content: "";
   position: absolute;
   background: url(../media/shared/decoration/text-bg-short.svg) no-repeat left / contain;
