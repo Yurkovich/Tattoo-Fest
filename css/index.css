@@ -46,7 +46,7 @@
 .hero__title::before {
   content: '06.06';
   position: absolute;
-  top: clamp(16.6rem, 30vw, 45rem);
+  top: clamp(16.6rem, 30vw, 40rem);
   font-size: clamp(5rem, 8vw, 12rem);
   color: var(--main-bg-color);
 }
@@ -614,7 +614,7 @@
   background-image: url('../media/shared/decoration/dragon.svg');
   cursor: pointer;
   border-radius: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .judges__card-img img {

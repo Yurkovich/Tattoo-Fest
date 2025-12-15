@@ -88,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // анимации //
 
-<<<<<<< HEAD
 
 
 
@@ -97,6 +96,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-=======
->>>>>>> b832372 (Fix preloader title text)
 

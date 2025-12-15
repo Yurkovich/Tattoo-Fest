@@ -47,3 +47,4 @@ window.addEventListener("load", function () {
   }, 2000) // 1 секунда минимальной загрузки
 })
 
+
