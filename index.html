@@ -7,7 +7,6 @@
   <title>Главная</title>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/index.css">
-
 </head>
 
 <body class="body">
@@ -80,34 +79,34 @@
         </div>
         <div class="container">
           <div class="hero__inner">
-            <h1 class="hero__title">
+            <h1 class="hero__title ">
               Казань<br>
               <span>тату фест</span>
             </h1>
             <div class="hero__links">
               <a class="hero__link" data-style-type="transparent" href="#">купить бокс</a>
-              <a class="hero__link" data-style-type="red" href="#">купить билет</a>
+              <a  class="hero__link" data-style-type="red" href="#">купить билет</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about">
-        <div class="container">
+      <section class="about" >
+        <div class="container" >
           <div class="about__inner">
-            <div class="about__header">
-              <h3 class="about__title">
+            <div class="about__header" >
+              <h3 class="about__title" >
                 О фестивале
               </h3>
-              <p class="about__info">
+              <p class="about__info" >
                 Мы вновь соберем в одном месте талантливых и творческих людей со всей России. 2 дня они будут бороться
                 за призовые места, а гости — следить за этой яркой битвой, болеть за участников и наслаждаться
                 атмосферой фестиваля.
               </p>
             </div>
-            <div class="about__content">
-              <ul class="about__grid">
-                <li class="about__item">
+            <div class="about__content" >
+              <ul class="about__grid" >
+                <li class="about__item ">
                   <p class="about__item-title">
                     14
                   </p>
@@ -141,8 +140,11 @@
                     Призовой фонд для участников
                   </p>
                 </li>
-                <li class="about__item about__item--video">
-                  <p>Видео</p>
+                <li class="about__item about__item-video">
+                    <video class="about__item--video" autoplay muted loop playsinline>
+                      <source src="/media/pages/index/1209.mp4" type="video/mp4">
+                      Ваш браузер не поддерживает видео.
+                  </video>
                 </li>
               </ul>
             </div>
@@ -278,7 +280,7 @@
 
       <section class="events">
         <div class="container container-events">
-          <h2 class="events-title">Что будем делать? </h2>
+          <h2 class="events-title" >Что будем делать? </h2>
           <div class="studios-grid">
             <!-- 1. Слева -->
             <div class="studio-card card-left">
@@ -363,7 +365,7 @@
 
       <section class="judges">
         <div class="container">
-          <div class="judges__inner">
+          <div  class="judges__inner">
             <h2 class="judges__title">
               Судьи фестиваля
             </h2>
@@ -998,9 +1000,14 @@
       </ul>
     </div>
   </div>
+  <div class="menu">
+    <div class="menu__wrapper">
+      <a href="#" class="menu__link" data-style-type="transparent">купить бокс</a>
+      <a href="#" class="menu__link" data-style-type="red">купить билет</a>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/SplitText.min.js"></script>
   <script src="./scripts/index.js"></script>
   <script src="./scripts/header.js"></script>
   <script src="./scripts/contestAccordion.js"></script>
@@ -1009,3 +1016,4 @@
 </body>
 
 </html>
+

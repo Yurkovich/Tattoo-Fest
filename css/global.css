@@ -214,6 +214,10 @@ body {
   background-color: #1616165e;
   transform: translateY(100%);
   transition: transform .3s ease-in-out;
+<<<<<<< HEAD
+=======
+  z-index: 100;
+>>>>>>> b832372 (Fix preloader title text)
 }
 
 .menu__wrapper {
@@ -234,4 +238,39 @@ body {
   .menu {
     transform: translateY(0);
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+.contacts-mg{
+  margin-top: 120px;
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+  }
+  
+  
+  body {
+  position: relative;
+  transform: none !important;
+  }
+  
+  
+  section, main, header, footer, .wrapper, .container {
+  transform: none !important;
+  }
+  
+  
+  /* Never let animated elements stay hidden */
+  [data-animate] {
+  opacity: 1 !important;
+  transform: none !important;
+  }
+  
+  
+
+>>>>>>> b832372 (Fix preloader title text)
