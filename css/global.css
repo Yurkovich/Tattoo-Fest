@@ -214,6 +214,7 @@ body {
   background-color: #1616165e;
   transform: translateY(100%);
   transition: transform .3s ease-in-out;
+  z-index: 100;
 }
 
 .menu__wrapper {

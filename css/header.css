@@ -3,6 +3,39 @@
 @import 'global.css';
 
 
+.body--active .header__burger {
+  gap: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.body--active .header__burger-text {
+  max-width: 0;
+}
+
+.header__burger-text span {
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+.body--active .header__burger-text span {
+  opacity: 0;
+}
+
+.body--active .header__burger-icon {
+  transform: rotate(45deg);
+}
+
+.body--active .header__burger .header__burger-icon span::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.body--active .header__burger .header__burger-icon span::after {
+  opacity: 0;
+}
+
+
 .header {
   color: var(--main-bg-color);
   font-size: clamp(1.6rem, 2vw, 2.2rem);
@@ -99,13 +132,13 @@
   background-color: var(--main-bg-color);
 }
 
-.header__burger span {
+.header__burger .header__burger-icon span {
   position: relative;
 }
 
-.header__burger span,
-.header__burger span::after,
-.header__burger span::before {
+.header__burger .header__burger-icon span,
+.header__burger .header__burger-icon span::after,
+.header__burger .header__burger-icon span::before {
   content: '';
   height: 2px;
   width: 18px;
@@ -113,16 +146,16 @@
   background-color: #fff;
 }
 
-.header__burger span::after,
-.header__burger span::before {
+.header__burger .header__burger-icon span::after,
+.header__burger .header__burger-icon span::before {
   position: absolute;
 }
 
-.header__burger span::after {
+.header__burger .header__burger-icon span::after {
   bottom: 8px;
 }
 
-.header__burger span::before {
+.header__burger .header__burger-icon span::before {
   top: 8px;
 }
 
@@ -178,7 +211,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .header__links {
     display: none;
   }
@@ -188,4 +221,3 @@
     width: 100%;
   }
 }
-
